@@ -1,19 +1,80 @@
 
 // 1 Задание:
+// Es5
+function makePercentPrice() {
+    let percentPrice = this.price / 100 * 25;
+    let price = this.price - percentPrice;
+    console.log(price);
+}
 
-for (let i = 0; i < 11; i++) {
-    if (i === 0) {
-        console.log(i, "– нулевое число");
+
+
+// 2 Задание:
+// Es5
+
+
+function Post(author, text, date) {
+    this.author = author;
+    this.text = text;
+    this.date = date;
+}
+
+Post.prototype.edit = function () {
+    this.text = prompt("Введите текст...");
+};
+
+function AttachedPost(author, text, date) {
+    Post.call(this, author, text, date)
+    this.highlighted = false;
+
+}
+
+AttachedPost.prototype = Object.create(Post.prototype);
+AttachedPost.prototype.constructor = AttachedPost;
+
+AttachedPost.prototype.makeTextHighlighted = function () {
+    this.highlighted = true;
+
+};
+
+
+let post1 = new AttachedPost("Ivan", " ", 19.02);
+post1.edit();
+post1.makeTextHighlighted();
+console.log(post1);
+
+//Es6
+class Post2 {
+    constructor(author, text, date) {
+        this.author = author;
+        this.text = text;
+        this.date = date;
     }
-    else if (i % 2 == 0) {
-        console.log(i, "– четное число");
-    }
-    else {
-        console.log(i, "– нечетное число");
+
+    edit2() {
+        this.text = prompt("Введите текст...");
+
     }
 }
 
-// 2 Задание:
+class AttachedPost2 extends Post2 {
+    constructor(author, text, date) {
+        super(author, text, date);
+        this.highlighted = false;
+
+    }
+
+    makeTextHighlighted2() {
+        this.highlighted = true;
+
+    }
+}
+
+let post2 = new AttachedPost2("Artem", " ", 09.02);
+post2.edit2();
+post2.makeTextHighlighted2();
+console.log(post2);
+
 
 const post = {
     author: "John", //вывести этот текст
