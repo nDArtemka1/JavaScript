@@ -37,7 +37,7 @@ class A {
         alert(this.param1);
     }
 }
-
+ииа
 class B extends A {
     constructor(param1, param2) {
         super(param1);
