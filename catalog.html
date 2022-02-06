@@ -3,22 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    <title>Главная</title>
 </head>
 
 <body>
-
     <header>
+
         <div class="header">
             <div class="container">
                 <div class="leftHeader">
-                    <a class="header__logo" href="#">
+                    <a class="header__logo" href="index.html">
                         <img src="images/logo.png" alt="">
                     </a>
                     <img class="searchIcon" src="images/search.png" alt="">
@@ -92,7 +91,7 @@
                     </a>
 
                     <span class="header__item cartIconWrap">
-                        <img class="cartIcon" src="images/cart.png" alt="">
+                        <img src="images/cart.png" alt="">
                         <span>0</span>
                     </span>
                     <div class="basket hidden">
@@ -111,139 +110,194 @@
                 </div>
             </div>
         </div>
+
     </header>
 
-
-    <main>
-
-        <section class="intro">
-            <div class="container intro__wrap">
-                <div class="intro__text">
-                    <h1>
-                        THE BRAND <br>
-                        <span class="intro__text-span">OF LUXERIOUS</span> <span class="decor">FASHION</span>
-                    </h1>
-                </div>
-            </div>
-        </section>
-
-        <section class="cotegory">
-            <div class="container category__wrap">
-
-                <div class="cotegory__item card__wooman">
-                    <div class="category__text">
-                        30% OFF <br>
-                        <span class="category__decor">FOR WOMEN</span>
-                    </div>
-                </div>
-
-                <div class="cotegory__item card__man">
-                    <div class="category__text">
-                        HOT DEAL<br>
-                        <span class="category__decor">FOR MEN</span>
-                    </div>
-                </div>
-
-                <div class="cotegory__item card__kid">
-                    <div class="category__text">
-                        NEW ARRIVALS<br>
-                        <span class="category__decor">FOR KIDS</span>
-                    </div>
-                </div>
-
-                <div class="cotegory__item card__accesories">
-                    <div class="category__text">
-                        LUXIROUS & TRENDY<br>
-                        <span class="category__decor">ACCESORIES</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <div class="featured container">
-            <h2 class="featuredHeader">Fetured Items</h2>
-            <div class="featuredTitle">Shop for items based on what we featured in this week</div>
-
-            <div class="featuredItems">
-
-
-            </div>
+    <div class="newArrivals">
+        <div class="container">
+            <h1>NEW ARRIVALS</h1>
+            <nav>
+                <a href="#">HOME</a>
+                <span>/</span>
+                <a href="#">MEN</a>
+                <span>/</span>
+                <a href="#">NEW ARRIVALS</a>
+            </nav>
         </div>
+    </div>
 
-
-        <div class="container button__wrap">
-
-            <a class="product__button__text" href="catalog.html">Browse All Product</a>
-
-        </div>
-
-
-        <div class="services">
-            <div class="container">
-
-                <div class="serivceUnit">
-                    <img src="images/services/delivery.svg" alt="">
-                    <div class="servicesTitle">
-                        Free Delivery
+    <div class="filters">
+        <div class="container">
+            <div class="filtersLeft">
+                <span class="filterLabel">FILTER</span>
+                <img class="filterIcon" src="images/filter.svg" alt="">
+                <div class="filterPopup hidden">
+                    <nav class="filterCategory">
+                        <div class="filterCategoryHeader">CATEGORY</div>
+                        <div class="hidden">
+                            <a href="#">Accessories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Hoodies & Sweatshirts</a>
+                            <a href="#">Jackets & Coats</a>
+                            <a href="#">Polos</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Sweaters & Knits</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Tanks</a>
+                        </div>
+                    </nav>
+                    <nav class="filterCategory">
+                        <div class="filterCategoryHeader">BRAND</div>
+                        <div class="hidden">
+                            <a href="#">Accessories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Hoodies & Sweatshirts</a>
+                            <a href="#">Jackets & Coats</a>
+                            <a href="#">Polos</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Sweaters & Knits</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Tanks</a>
+                        </div>
+                    </nav>
+                    <nav class="filterCategory">
+                        <div class="filterCategoryHeader">DESIGNER</div>
+                        <div class="hidden">
+                            <a href="#">Accessories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Hoodies & Sweatshirts</a>
+                            <a href="#">Jackets & Coats</a>
+                            <a href="#">Polos</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Sweaters & Knits</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Tanks</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="filtersRight">
+                <div class="filterTrending">
+                    TRENDING NOW
+                    <img src="images/filterArrow.svg" alt="">
+                </div>
+                <div class="filterSize">
+                    <div class="filterSizeWrap">
+                        SIZE
+                        <img src="images/filterArrow.svg" alt="">
                     </div>
-                    <div class="servicesText">
-                        Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.
+                    <div class="filterSizes hidden">
+                        <div>
+                            <input type="checkbox"> XS
+                        </div>
+                        <div>
+                            <input type="checkbox"> S
+                        </div>
+                        <div>
+                            <input type="checkbox"> M
+                        </div>
+                        <div>
+                            <input type="checkbox"> L
+                        </div>
                     </div>
                 </div>
-
-                <div class="serivceUnit">
-                    <img src="images/services/discount.svg" alt="">
-                    <div class="servicesTitle">
-                        Sales & discounts
-                    </div>
-                    <div class="servicesText">
-                        Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.
-                    </div>
-                </div>
-
-                <div class="serivceUnit">
-                    <img src="images/services/assurance.svg" alt="">
-                    <div class="servicesTitle">
-                        Quality assurance
-                    </div>
-                    <div class="servicesText">
-                        Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.
-                    </div>
+                <div class="filterPrice">
+                    PRICE
+                    <img src="images/filterArrow.svg" alt="">
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="subscribe">
-            <div class="container">
+    <div class="featured container">
 
-                <div class="subscribeLeft">
-                    <img src="images/subscribeUser.png" alt="">
-                    <div class="subscribeUserText">
-                        “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
-                    </div>
-                </div>
+        <div class="featuredItems">
 
-                <div class="subscribeRight">
-                    <div class="subscribeTitle">
-                        SUBSCRIBE
-                    </div>
-                    <div class="subscribeText">
-                        FOR OUR NEWLETTER AND PROMOTION
-                    </div>
-                    <form action="" class="subscribeForm">
-                        <input type="text" placeholder="Enter Your Email">
-                        <button>Subscribe</button>
-                    </form>
-                </div>
 
-            </div>
         </div>
 
-    </main>
+        <div class="pagination">
+            <a href="#">
+                <img src="images/chevronLeft.svg" alt="">
+            </a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6.....20</a>
+            <a href="#">
+                <img src="images/chevronRight.svg" alt="">
+            </a>
+        </div>
+    </div>
 
+    <div class="services">
+        <div class="container">
+
+            <div class="serivceUnit">
+                <img src="images/services/delivery.svg" alt="">
+                <div class="servicesTitle">
+                    Free Delivery
+                </div>
+                <div class="servicesText">
+                    Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                </div>
+            </div>
+
+            <div class="serivceUnit">
+                <img src="images/services/discount.svg" alt="">
+                <div class="servicesTitle">
+                    Sales & discounts
+                </div>
+                <div class="servicesText">
+                    Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                </div>
+            </div>
+
+            <div class="serivceUnit">
+                <img src="images/services/assurance.svg" alt="">
+                <div class="servicesTitle">
+                    Quality assurance
+                </div>
+                <div class="servicesText">
+                    Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <div class="container">
+
+            <div class="subscribeLeft">
+                <img src="images/subscribeUser.png" alt="">
+                <div class="subscribeUserText">
+                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+                </div>
+            </div>
+
+            <div class="subscribeRight">
+                <div class="subscribeTitle">
+                    SUBSCRIBE
+                </div>
+                <div class="subscribeText">
+                    FOR OUR NEWLETTER AND PROMOTION
+                </div>
+                <form action="" class="subscribeForm">
+                    <input type="text" placeholder="Enter Your Email">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
 
     <footer>
         <div class="footer">
@@ -268,10 +322,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
 
     <script src="scripts/app.js"></script>
     <script src="scripts/basket/ProductDTO.js"></script>

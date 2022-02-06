@@ -9,16 +9,17 @@
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    <title>Главная</title>
+    <title>Регистрация</title>
 </head>
 
 <body>
 
     <header>
+
         <div class="header">
             <div class="container">
                 <div class="leftHeader">
-                    <a class="header__logo" href="#">
+                    <a class="header__logo" href="index.html">
                         <img src="images/logo.png" alt="">
                     </a>
                     <img class="searchIcon" src="images/search.png" alt="">
@@ -92,7 +93,7 @@
                     </a>
 
                     <span class="header__item cartIconWrap">
-                        <img class="cartIcon" src="images/cart.png" alt="">
+                        <img src="images/cart.png" alt="">
                         <span>0</span>
                     </span>
                     <div class="basket hidden">
@@ -111,110 +112,71 @@
                 </div>
             </div>
         </div>
+
     </header>
 
 
     <main>
 
-        <section class="intro">
-            <div class="container intro__wrap">
-                <div class="intro__text">
-                    <h1>
-                        THE BRAND <br>
-                        <span class="intro__text-span">OF LUXERIOUS</span> <span class="decor">FASHION</span>
-                    </h1>
-                </div>
-            </div>
-        </section>
-
-        <section class="cotegory">
-            <div class="container category__wrap">
-
-                <div class="cotegory__item card__wooman">
-                    <div class="category__text">
-                        30% OFF <br>
-                        <span class="category__decor">FOR WOMEN</span>
-                    </div>
-                </div>
-
-                <div class="cotegory__item card__man">
-                    <div class="category__text">
-                        HOT DEAL<br>
-                        <span class="category__decor">FOR MEN</span>
-                    </div>
-                </div>
-
-                <div class="cotegory__item card__kid">
-                    <div class="category__text">
-                        NEW ARRIVALS<br>
-                        <span class="category__decor">FOR KIDS</span>
-                    </div>
-                </div>
-
-                <div class="cotegory__item card__accesories">
-                    <div class="category__text">
-                        LUXIROUS & TRENDY<br>
-                        <span class="category__decor">ACCESORIES</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <div class="featured container">
-            <h2 class="featuredHeader">Fetured Items</h2>
-            <div class="featuredTitle">Shop for items based on what we featured in this week</div>
-
-            <div class="featuredItems">
-
-
-            </div>
-        </div>
-
-
-        <div class="container button__wrap">
-
-            <a class="product__button__text" href="catalog.html">Browse All Product</a>
-
-        </div>
-
-
-        <div class="services">
+        <div class="newArrivals">
             <div class="container">
+                <h1>REGISTRATION</h1>
 
-                <div class="serivceUnit">
-                    <img src="images/services/delivery.svg" alt="">
-                    <div class="servicesTitle">
-                        Free Delivery
-                    </div>
-                    <div class="servicesText">
-                        Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.
-                    </div>
-                </div>
-
-                <div class="serivceUnit">
-                    <img src="images/services/discount.svg" alt="">
-                    <div class="servicesTitle">
-                        Sales & discounts
-                    </div>
-                    <div class="servicesText">
-                        Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.
-                    </div>
-                </div>
-
-                <div class="serivceUnit">
-                    <img src="images/services/assurance.svg" alt="">
-                    <div class="servicesTitle">
-                        Quality assurance
-                    </div>
-                    <div class="servicesText">
-                        Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.
-                    </div>
-                </div>
             </div>
         </div>
+
+        <section class="container registration">
+            <div class="registration__form">
+                <p class="registration__form-p">Your Name</p>
+                <form action="#">
+
+                    <input class="registration__form-field" type="text" minlength="2" placeholder="First Name">
+                    <input class="registration__form-field" type="text" placeholder="Last Name">
+
+                    <div class="registration__form-radio">
+                        <label><input type="radio" name="gender" checked> Male</label>
+                        <label><input type="radio" name="gender"> Female</label>
+                    </div>
+
+                </form>
+                <p class="registration__form-p2">Login details</p>
+                <form action="#">
+
+                    <input class="registration__form-field" type="email" minlength="2" placeholder="Email">
+                    <input class="registration__form-field" type="password" placeholder="Password">
+                </form>
+                <div class="registration__form-text">
+                    Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+                    letters
+                </div>
+                <a href="#">JOIN NOW
+                    <img src="images/arrow-right.svg" alt="arrow-right">
+                </a>
+
+
+
+            </div>
+
+            <div class="registration__description">
+                <p>LOYALTY HAS ITS PERKS</p>
+                <p class="registration__description-loyalty">Get in on the loyalty program where you can earn points and
+                    unlock serious perks. Starting with these as soon as you join:</p>
+                <ol>
+                    <li>15% off welcome offer</li>
+                    <li>Free shipping, returns and exchanges on all orders</li>
+                    <li>$10 off a purchase on your birthday</li>
+                    <li>Early access to products</li>
+                    <li>Exclusive offers & rewards</li>
+                </ol>
+
+
+
+
+            </div>
+
+
+
+        </section>
 
         <div class="subscribe">
             <div class="container">
@@ -273,11 +235,7 @@
 
 
 
-    <script src="scripts/app.js"></script>
-    <script src="scripts/basket/ProductDTO.js"></script>
-    <script src="scripts/basket/products.js"></script>
-    <script src="scripts/basket/productsCards.js"></script>
-    <script src="scripts/basket/basket.js"></script>
+
 </body>
 
 </html>
